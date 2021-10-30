@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html >
+<head>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>  
+    <title>Reto4</title>
+    
+
+</head>
+<body>
+    <body style="background-color:#a7eff8;">
+    <center><h1> Ortopedicos.com </h1></center>
+    <center><img src="https://cdn.pixabay.com/photo/2019/02/15/11/57/mobile-3998331__340.png"></center>
+    <h2> Categorias</h2>
+    <div id="resultado1"></div>
+    <script type="text/javascript"> 
+    window.onload = traerInformacionCategorias();
+    </script>
+    
+    <div>
+        <input type="text" id="Cname" placeholder="name">
+        <input type="text" id="Cdescription" placeholder="description">
+       
+        
+    </div>
+    <button onclick="guardarInformacionCategorias()">Guardar Categorias</button>
+
+<!--Ortopedics-->
+    <h2> Ortopedics</h2>
+    <div id="resultado2"></div>
+    <script type="text/javascript"> 
+    window.onload = traerInformacionOrtopedics();
+    </script>
+    <div>
+        <input type="text" id="Oname" placeholder="name">
+        <input type="text" id="Obrand" placeholder="brand">
+        <input type="number" id="Oyear" placeholder="year">
+        <input type="text" id="Odescription" placeholder="description">    
+        <select id="select-category"></select>
+    </div>
+    <button onclick="guardarInformacionOrtopedics()">Guardar Ortopedics</button>
+
+<!--Cliente-->
+    <h2> Clientes</h2>
+    <div id="resultado3"></div>
+    <script type="text/javascript"> 
+    window.onload = traerInformacionClientes();
+    </script>
+   
+    <div>
+        
+        <input type="email" name="email" id="Clemail" placeholder="email@example.com">
+        <input type="password" id="Clpassword" placeholder="password">
+        <input type="text" id="Clname" placeholder="name">
+        <input type="number" id="Clage" placeholder="age">  
+    </div>
+    <button onclick="guardarInformacionClientes()">Guardar Clientes</button>
+
+<!--Mensajes-->
+    <h2> Mensajes</h2>
+    <div id="resultado4"></div>
+    <script type="text/javascript">
+    window.onload= traerInformacionMensajes();
+    </script>
+
+    <div>
+        <input type="text" id="MeText" placeholder="messageText"> 
+    </div>
+    <button onclick="guardarInformacionMensajes()">Guardar Mensajes</button>
+
+<!--Reservas-->
+    <h2> Reservas</h2>
+    <div id="resultado5"></div>
+    <script type="text/javascript">
+        window.onload= traerInformacionReservas();
+    </script>
+    
+    <div>
+        <input type="datetime" id="startReserva" placeholder="startDate"> 
+        <input type="datetime" id="devolutionReserva" placeholder="devolutionDate"> 
+        <input type="text" id="statusReserva" placeholder="status"> 
+        
+    </div>
+    <button onclick="guardarInformacionReservas()">Guardar Reserva</button>
+
+<!--Administradores-->
+    <h2> Administradores</h2>
+    <div id="resultado6"></div>
+    <script type="text/javascript">
+        window.onload= traerInformacionAdmi();
+    </script>
+    
+    <div>
+        <input type="text" id="nameAdmi" placeholder="name"> 
+        <input type="email" name="email" id="correoAdmi" placeholder="email@example.com">
+        <input type="password" id="passAdmi" placeholder="contraseña">
+    </div>
+    <button onclick="guardarInformacionAdmi()">Guardar Administradores</button>
+
+<!--Calification-->
+<h2> Calificación</h2>
+<div id="resultado7"></div>
+<script type="text/javascript">
+    window.onload= traerInformacionCalificacion();
+</script>
+
+<div>
+    <input type="number" id="cal" placeholder="Calificación"> 
+    <input type="text" id="calMessage" placeholder="Mensaje"> 
+    <input type="number" id="calReservation" placeholder="Reservacion"> 
+    
+</div>
+<button onclick="guardarInformacionCalificacion()">Guardar Calificación</button>
+</body>
+</html>
